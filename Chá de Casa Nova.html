@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chá de Casa Nova</title>
+<style> 
+#LogoInicial{
+  border: 0px solid #ddd;
+  border-radius: 100px;
+  border-bottom: 100px;
+  padding: 1px;
+  width: 300px;
+  
+
+}
+.p1{
+  font-size: 65px;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset{
+  border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo desfocado */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+        body {
+            background-color: cornflowerblue;
+            background-size: contain;
+            padding: 6px;
+            text-align: center;
+            
+            
+        }
+
+        button {
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 12px;
+            cursor: pointer;
+            background-color: #f6eccf; 
+            color: black; 
+            border: 2px solid #0457aa;
+        }
+
+        button:hover {
+            background-color: #1085f9;
+            color: white;
+        }
+        div{
+          border-radius: 10px;
+        }
+        
+        #myForm {
+            max-width: 400px; /* Largura máxima do contêiner do formulário */
+            margin: 50px auto; /* Centralizar o contêiner na página */
+            background-color: #14131323; /* Cor de fundo do contêiner do formulário */
+            padding: 20px; /* Espaçamento interno dentro do contêiner do formulário */
+            border-radius: 10px; /* Borda arredondada do contêiner do formulário */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+            /* Adiciona desfoque ao fundo */
+            backdrop-filter: blur(10px);
+            /* Fallback para navegadores que não suportam backdrop-filter */
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+      </style>
+</head>
+<body>
+<br><br>
+<form id="Luara" action="https://api.sheetmonkey.io/form/dzXpxxYrQfJM2U8KEVY5hq" method="post">
+  <!-- Seus campos de formulário aqui -->
+
+
+<script>
+document.getElementById('Luara').addEventListener('submit', function(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+  
+  // Aqui você pode adicionar uma chamada AJAX para enviar os dados do formulário
+  // Por exemplo, usando o objeto FormData e a API Fetch:
+  var formData = new FormData(this);
+  
+  fetch(this.action, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      // Se o envio foi bem-sucedido, resete o formulário
+      this.reset();
+      // Ou redirecione a página para si mesma para recarregar
+      // window.location.href = window.location.href;
+      document.getElementById('confirmationPopup').style.display = 'flex';
+    } else {
+      // Trate erros de resposta aqui
+      alert('Ocorreu um erro ao enviar o formulário.');
+    }
+  })
+  .catch(error => {
+    // Trate erros de rede aqui
+    alert('Formulario enviado.');
+  });
+});
+</script>
+
+  
+  <h2>Aqui está a lista de alguns presentes que vocês podem escolher me dá, desde já fico muito grata!</h2>
+  
+  <h1>lista
+  </H1>
+      <center>
+          
+          <br>
+          
+          <div style="border: 1px solid black; padding: 8px; margin: 8px;">
+                   
+        <div>
+          
+            <label for="nome">Nome:</label>
+            <input type="" name="Nome do Convidado" required>
+            </div>
+      </center><br>
+
+        <fieldset>
+          <legend> Você confirma que estará presente em nosso casamento?</legend> 
+        <label for="confimação de Presença"></label>
+          <label for="Item1">Jogo de Panela</label>
+          <input type="radio" name="presente" value="Sim" required>
+          
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">Panela de Pressão</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">Cuscuzeira</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">Liquidificador</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">Batedeira</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">Cafeteira</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">Sanduicheira</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">6 copos</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">6 pratos</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">1 jogo de talheres</label>
+          <input type="radio" name="presente" value="Sim" required>
+          <label for="Item1">kit de concha,espátula,etc...</label>
+        </fieldset>
+        <p></p>
+        <fieldset>
+         
+      <br><br>
+
+
+  <button type="submit">Confirmar</button>
+
+</form>
+
+<p class="p1">Henrique e Tais</p>
+
+</body>
+</html>
